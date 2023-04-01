@@ -1,0 +1,308 @@
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 0%;
+}
+
+h1 {
+    color: #7c795d;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+}
+
+p {
+    color: #4c4a37;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    margin: 0 0 24px;
+    letter-spacing: 0.55px;
+    color: rgb(19, 17, 17);
+    padding: 20px;
+}
+
+a,li{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* header  start*/
+.header {
+
+    white-space: normal;
+    overflow: hidden;
+    background-color: #2E2E36;
+    padding-top: 50px;
+    min-height: 100px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: #77949D;
+    text-align: center;
+    padding: 34px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+/* header end */
+
+/* container start*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* image_section start */
+#image_section {
+    background-image: url(images/header.png);
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #77949D;
+
+}
+
+.image_section:hover{
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+/* image_section end */
+
+/* container end */
+
+/* about-section start*/
+#about-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about {
+    padding: 20px;
+    border-right: 6px solid gray;
+    min-height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+}
+
+#about_information {
+    width: 75%;
+}
+
+/* about-section end */
+
+/* work-section start*/
+#work-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#work {
+    padding: 20px;
+    border-right: 6px solid gray;
+    min-height: 700px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+}
+
+#work_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 75%;
+}
+
+#Project_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* work-section end */
+
+
+/* contact-section start*/
+#contact-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact {
+    padding: 20px;
+    border-right: 6px solid gray;
+    min-height: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+}
+
+#contact_information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    width: 75%;
+    align-items: center;
+}
+
+/* contact-section end */
+
+
+/* cars start here */
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    border-width: 1px;
+    border-color: rgba(219, 234, 254, 1);
+    border-radius: 1rem;
+    background-color: #e9e8e0;
+    padding: 1rem;
+    min-height: 600px;
+}
+
+.card_contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 1px;
+    border-color: rgba(219, 234, 254, 1);
+    border-radius: 1rem;
+    background-color: #e9e8e0;
+    padding: 1rem;
+}
+
+
+.card_profession {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    border-width: 1px;
+    border-color: rgba(219, 234, 254, 1);
+    border-radius: 1rem;
+    background-color: #e9e8e0;
+    padding: 1rem;
+    min-height: 300px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+
+.message {
+    margin-top: 1rem;
+    font-size: 25px;
+}
+
+/* cards end here */
+
+/* footer start  */
+#footer {
+    display: flex;
+    bottom: 0;
+    min-height: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    width: 100%;
+    justify-content: center;
+}
+
+/* footer end */
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
